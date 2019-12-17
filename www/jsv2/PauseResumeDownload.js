@@ -172,7 +172,7 @@ PRD.prototype._getUrlFileLength = function (uri, cb) {
 
     var fileTransfer = new FileTransfer();
 
-    var temp = this.disk + '/temp.zip';
+    var temp = this.disk + '/temp-'+ (+new Date()) +'.zip';
     var isCall = false;
 
     uri = encodeURI(uri);
